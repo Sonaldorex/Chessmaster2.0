@@ -2,19 +2,11 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChessMaster: Les pièces des échecs</title>
   <link rel="stylesheet" href="style.css">
-  <title>ChessMaster: Les pièces des échecs </title>
 </head>
-<body>
-  <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Les Pièces d'Échecs</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+
 <body>
 
 <h1>Les Pièces du Jeu d'Échecs</h1>
@@ -22,18 +14,21 @@
 <div class="piece">
     <h2>♔ Roi</h2>
     <ul>
-        <li><strong>Valeur :</strong>Sans valeur, C'est la pièce la plus importante</li>
+        <li><strong>Valeur :</strong> Sans valeur, C'est la pièce la plus importante</li>
         <li><strong>Déplacement :</strong> Une case dans toutes les directions</li>
-        <li><strong>Spécial :</strong> <a href="#modal1">Roque Possible</a> </li>
+        <li><strong>Spécial :</strong> 
+            <a href="#modal1">Roque Possible</a>
+        </li>
     </ul>
-  
 </div>
 
 <div class="piece">
     <h2>♕ Reine</h2>
     <ul>
         <li><strong>Valeur :</strong> 9 points</li>
-        <li><strong>Déplacement :</strong><a href="#modal2"> Horizontal, vertical et diagonal</a></li>
+        <li><strong>Déplacement :</strong> 
+            <a href="#modal2">Horizontal, vertical et diagonal</a>
+        </li>
     </ul>
 </div>
 
@@ -41,7 +36,9 @@
     <h2>♖ Tour</h2>
     <ul>
         <li><strong>Valeur :</strong> 5 points</li>
-        <li><strong>Déplacement :</strong><a href="#modal3"> Horizontal ou vertical</a></li>
+        <li><strong>Déplacement :</strong> 
+            <a href="#modal3">Horizontal ou vertical</a>
+        </li>
     </ul>
 </div>
 
@@ -49,7 +46,9 @@
     <h2>♗ Fou</h2>
     <ul>
         <li><strong>Valeur :</strong> 3 points</li>
-        <li><strong>Déplacement :</strong><a href="#modal4"> Diagonale uniquement</a></li>
+        <li><strong>Déplacement :</strong> 
+            <a href="#modal4">Diagonale uniquement</a>
+        </li>
     </ul>
 </div>
 
@@ -57,7 +56,9 @@
     <h2>♘ Cavalier</h2>
     <ul>
         <li><strong>Valeur :</strong> 3 points</li>
-        <li><strong>Déplacement :</strong><a href="#modal5"> En forme de L</a></li>
+        <li><strong>Déplacement :</strong> 
+            <a href="#modal5">En forme de L</a>
+        </li>
     </ul>
 </div>
 
@@ -65,61 +66,110 @@
     <h2>♙ Pion</h2>
     <ul>
         <li><strong>Valeur :</strong> 1 point</li>
-        <li><strong>Déplacement :</strong> 1 case (<a href="#modal6">2 au premier coup</a>)</li>
-        <li><strong>Capture :</strong><a href="#modal7"> Diagonale</a></li>
-      <li><strong>Specials :</strong><a href="#modal8"> En passant + Promotion</a></li>
-      <li><strong>-Promotion:</strong><a href="#modal9">Promotion</li>
+        <li><strong>Déplacement :</strong> 1 case 
+            (<a href="#modal6">2 au premier coup</a>)
+        </li>
+        <li><strong>Capture :</strong> 
+            <a href="#modal7">Diagonale</a>
+        </li>
+        <li><strong>Specials :</strong> 
+            <a href="#modal8">En passant + Promotion</a>
+        </li>
+        <li><strong>-Promotion:</strong> 
+            <a href="#modal9">Voir Promotion</a>
+        </li>
     </ul>
 </div>
-  <H1> L'échéquier</H1>
+
+<h1>L'échéquier</h1>
+
 <div class="boardimg">
-    <img src="chessboard.jpg" width=550 > 
+    <img src="chessboard.jpg" width="550">
 </div>
-      
-  <div id="modal1" class="modal"><div class="modal-content">
-<a href="#" class="close">&times;</a>
-<video controls width="100%"><source src="roquefinal.mov" type="video/mp4"></video>
-</div></div>
 
-<div id="modal2" class="modal"><div class="modal-content">
-<a href="#" class="close">&times;</a>
-<video controls width="100%"><source src="reinemvt.mov" type="video/mp4"></video>
-</div></div>
+<!-- VIDEO MODALS -->
 
-<div id="modal3" class="modal"><div class="modal-content">
-<a href="#" class="close">&times;</a>
-<video controls width="100%"><source src="Tourmvt.mov" type="video/mp4"></video>
-</div></div>
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <video controls width="100%">
+      <source src="roquefinal.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
 
-<div id="modal4" class="modal"><div class="modal-content">
-<a href="#" class="close">&times;</a>
-<video controls width="100%"><source src="Foumvt.mov" type="video/mp4"></video>
-</div></div>
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <video controls width="100%">
+      <source src="reinemvt.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
 
-<div id="modal5" class="modal"><div class="modal-content">
-<a href="#" class="close">&times;</a>
-<video controls width="100%"><source src="cavaliermvt.mov" type="video/mp4"></video>
-</div></div>
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <video controls width="100%">
+      <source src="Tourmvt.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
 
-<div id="modal6" class="modal"><div class="modal-content">
-<a href="#" class="close">&times;</a>
-<video controls width="100%"><source src="pionmvt.mov" type="video/mp4"></video>
-</div></div>
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <video controls width="100%">
+      <source src="Foumvt.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
 
-<div id="modal7" class="modal"><div class="modal-content">
-<a href="#" class="close">&times;</a>
-<video controls width="100%"><source src="piocap.mov" type="video/mp4"></video>
-</div></div>
+<div id="modal5" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <video controls width="100%">
+      <source src="cavaliermvt.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
 
-<div id="modal8" class="modal"><div class="modal-content">
-<a href="#" class="close">&times;</a>
-<video controls width="100%"><source src="en passantpion.mov" type="video/mp4"></video>
-</div></div>
+<div id="modal6" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <video controls width="100%">
+      <source src="pionmvt.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
 
-<div id="modal9" class="modal"><div class="modal-content">
-<a href="#" class="close">&times;</a>
-<video controls width="100%"><source src="promotion.mov" type="video/mp4"></video>
-</div></div>
+<div id="modal7" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <video controls width="100%">
+      <source src="piocap.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+<div id="modal8" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <video controls width="100%">
+      <source src="en passantpion.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+<div id="modal9" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <video controls width="100%">
+      <source src="promotion.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
 
 </body>
 </html>
+
