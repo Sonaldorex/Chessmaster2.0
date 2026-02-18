@@ -1,4 +1,13 @@
 body {
+    background-image: url("fond2.jpg");
+    background-size: cover;        /* couvre tout l'écran */
+    background-position: center;   /* centre l'image */
+    background-repeat: no-repeat;  /* évite la répétition */
+    background-attachment: fixed;  /* effet fixe au scroll (optionnel) */
+}
+
+
+body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
