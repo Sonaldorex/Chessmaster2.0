@@ -14,6 +14,10 @@ h1 {
     margin: 40px 0 20px;
     color: gold;
 }
+h2 {
+    color : white;
+}
+
 
 .piece {
     max-width: 500px;
