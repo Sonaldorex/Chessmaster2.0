@@ -3,47 +3,39 @@ body {
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin: 40px 0 20px;
 }
 
 .piece {
     max-width: 500px;
     margin: 20px auto;
-    text-align: center;
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 8px;
 }
 
-.piece h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
 .piece ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
-.piece li {
-    margin-bottom: 8px;
-}
-
-h1 {
-    text-align: center;
-    margin: 40px 0 20px;
-}
+/* ECHIQUIER */
 
 .board-section {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 50px;
+    align-items: center;
+    gap: 60px;
     margin: 40px 0;
 }
 
 .boardimg img {
     width: 550px;
-    height: auto;
+    border-radius: 8px;
 }
 
 .board-text {
@@ -51,66 +43,68 @@ h1 {
     text-align: left;
 }
 
-.board-text h2 {
-    text-align: center;
+/* REGLES */
+
+.rules {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    line-height: 1.6;
 }
 
-.board-text ul {
-    padding-left: 20px;
+/* MODALS */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
 }
+
+.modal:target {
+    display: block;
+}
+
+.modal-content {
+    background: white;
+    margin: 8% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+.modal iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    text-decoration: none;
+    color: black;
+}
+
+/* RESPONSIVE */
 
 @media (max-width: 900px) {
     .board-section {
         flex-direction: column;
-        text-align: center;
-    }
-
-    .boardimg img {
-        width: 90%;
     }
 
     .board-text {
         text-align: center;
     }
 
-    .board-text ul {
-        padding-left: 0;
-        list-style-position: inside;
+    .boardimg img {
+        width: 90%;
     }
-}
-
-/* Modal styles (assuming you have or need to add) */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 800px;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
 }
