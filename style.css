@@ -95,3 +95,30 @@ ul {
   color: black;
   font-weight: bold;
 }
+.board-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 40px 0;
+}
+
+.boardimg img {
+    width: 550px;
+    height: auto;
+}
+
+.board-text {
+    max-width: 500px;
+}
+
+@media (max-width: 900px) {
+    .board-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .boardimg img {
+        width: 90%;
+    }
+}
