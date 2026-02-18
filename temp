@@ -316,3 +316,119 @@
 </div>
 </body>
 </html>
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.piece {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.piece h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.piece ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.piece li {
+    margin-bottom: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.board-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 40px 0;
+}
+
+.boardimg img {
+    width: 550px;
+    height: auto;
+}
+
+.board-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.board-text h2 {
+    text-align: center;
+}
+
+.board-text ul {
+    padding-left: 20px;
+}
+
+@media (max-width: 900px) {
+    .board-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .boardimg img {
+        width: 90%;
+    }
+
+    .board-text {
+        text-align: center;
+    }
+
+    .board-text ul {
+        padding-left: 0;
+        list-style-position: inside;
+    }
+}
+
+/* Modal styles (assuming you have or need to add) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
